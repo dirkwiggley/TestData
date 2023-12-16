@@ -1,6 +1,5 @@
 import express from "express"
 import * as dotenv from "dotenv"
-import cookieParser from "cookie-parser"
 import cors from "cors"
 
 import userRoute from "./routes/users.js"
@@ -31,7 +30,6 @@ console.debug(process.env.SECRET_DATA)
 console.debug(process.env.ACCESS_KEY)
 
 app.use(express.json())
-app.use(cookieParser())
 
 app.use("/users", userRoute)
 app.use("/videos", videoRoute)
