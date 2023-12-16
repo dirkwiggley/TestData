@@ -19,7 +19,7 @@ function deleteFolderRecursive(path) {
 
 console.log("Cleaning working tree...");
 
-deleteFolderRecursive("./dist");
+deleteFolderRecursive("./public");
 
 console.log("Successfully cleaned working tree!");
 
